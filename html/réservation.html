@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>réservation</title>
+</head>
+<body>
+ <p> Réservez votre voyage</p>
+ 
+ <div>
+    <label for="nom">nom:</label>
+    <input type="text" name="nom">
+ </div>
+ 
+ <div>
+    <label for="prénom">prénom:</label>
+    <input type="text" name="prénom">
+ </div>
+ 
+ <div>
+    <label for="adresse mail">adresse mail:</label>
+    <input type="email" name="adresse mail">
+ </div>
+
+ <div>
+    <label for="telephone">téléphone portable:</label>
+    <input type="tel" name="telephone" pattern="^0[6-7]([0-9]{2}){3}[0-9]{2}$">
+ </div>
+
+ <div>
+    <label for="Départ">Départ:</label>
+    <input type="Date" min="2020-12-01" name="Départ">
+ </div>
+
+ <div>
+    <label for="Retour">Retour:</label>
+    <input type="Date" min="2020-12-01" name="Retour">
+ </div>
+
+<div>
+    <label for="nombre d'adultes">nombre d'adultes:</label>
+    <input type="number"  min="0" name="nombre d'adultes">
+</div>
+
+<div>
+    <label for="nombre d'enfants (-12ans)">nombre d'enfants (-12ans):</label>
+    <input type="number" min="0" name="nombre d'enfants (-12ans)">
+</div>
+
+<p>Petit-Déjeuner ?</p>
+
+<div>
+  <input type="radio" id="Oui" name="drone" value="Oui"
+         checked>
+  <label for="Oui">Oui</label>
+</div>
+
+  <div>
+    <input type="radio" id="Non" name="drone" value="Non"
+           checked>
+    <label for="Non">Non</label>
+</div>
+
+<p>
+<div>
+    <label for="Prix total">Prix total:</label>
+    <input type="text" name="Prix total">
+</div>
+</p>
+
+<fieldset>
+    <legend>Demande de renseignement supplémentaire</legend>
+    <textarea name="votremessage" cols="90" rows="10">votre message</textarea>
+</fieldset> <br>
+
+<input type="submit" value="Valider">
+</body>
+</html>
